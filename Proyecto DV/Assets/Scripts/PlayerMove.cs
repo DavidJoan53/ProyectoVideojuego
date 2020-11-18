@@ -68,5 +68,13 @@ public class PlayerMove : MonoBehaviour
                 rb2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier) * Time.deltaTime;
             }
         }
+        //ATACAR
+        if(Input.GetKey("e"))
+        {
+            animator.SetBool("Attack", true);
+        }
+        else {
+            animator.SetBool("Attack", false);
+        }
     }
 }
