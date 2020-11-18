@@ -5,10 +5,13 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float runSpeed=4;
-    public float jumpSpeed=6;
+    public float jumpSpeed=4;
+    public float wallSlidingSpeed=1;
+    public float wallJumpSpeed=2;
     Rigidbody2D rb2D;
 
     public bool betterJump = false;
+    public bool wallSliding = false;
 
     public float fallMultiplier = 0.5f;
     public float lowJumpMultiplier = 1f;
@@ -24,7 +27,7 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Movimiento horizontal del personaje
+        //MOVIMIENTO HORIZONTAL DEL PERSONAJE
         if(Input.GetKey("d"))
         {
             rb2D.velocity = new Vector2(runSpeed,rb2D.velocity.y);
@@ -41,12 +44,31 @@ public class PlayerMove : MonoBehaviour
             rb2D.velocity = new Vector2(0, rb2D.velocity.y);
             animator.SetBool("Run", false);
         }
-        //Salto del personaje
-        if(Input.GetKey("space") && CheckGround.isGrounded)
+        //RAPEL EN PARED
+        if(WallCheck.isWalled && CheckGround.isGrounded==false && (Input.GetKey("a") || Input.GetKey("d")))
         {
-            rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
+            wallSliding = true;
+        } else
+        {
+            wallSliding = false;
+        }
+        if(wallSliding)
+        {
+            rb2D.velocity = new Vector2(rb2D.velocity.x, Mathf.Clamp(rb2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
         }
 
+        //SALTO DEL PERSONAJE
+        if(Input.GetKey("space") && (CheckGround.isGrounded || WallCheck.isWalled))
+        {
+            if(CheckGround.isGrounded && !WallCheck.isWalled)
+            {
+                rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
+            } else 
+            if(!CheckGround.isGrounded && WallCheck.isWalled)
+            {
+                rb2D.velocity = new Vector2(rb2D.velocity.x, wallJumpSpeed);
+            }
+        }
         if(CheckGround.isGrounded==false)
         {
             animator.SetBool("Jump", true);
@@ -56,7 +78,7 @@ public class PlayerMove : MonoBehaviour
             animator.SetBool("Jump", false);
         }
 
-        //Salto mejorado
+        //SALTO MEJORADO
         if(betterJump)
         {
             if(rb2D.velocity.y<0)
