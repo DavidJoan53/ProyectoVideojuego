@@ -8,9 +8,17 @@ public class FireCollected : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            //ESTABLECIMIENTO DEL CHECKPOINT
+            collision.GetComponent<PlayerRespawn>().ReachedCheckPoint(transform.position.x, transform.position.y);
+            //ANIMACIÓN DEL SPRITE
             GetComponent<SpriteRenderer>().enabled = false;
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
-            Destroy(gameObject, 1f);
+            Invoke("DisableAnimation", 1);
+            //Destroy(gameObject, 1f);
         }
+    }
+
+    void DisableAnimation() {
+        gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().enabled = false;
     }
 }
