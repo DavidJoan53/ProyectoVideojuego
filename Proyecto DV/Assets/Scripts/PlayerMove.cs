@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float runSpeed=4;
-    public float jumpSpeed=4;
+    public float jumpSpeed=5;
     public float wallSlidingSpeed=1;
-    public float wallJumpSpeed=2;
+    public float wallJumpSpeed=3;
     Rigidbody2D rb2D;
 
     public bool betterJump = false;
@@ -60,12 +60,11 @@ public class PlayerMove : MonoBehaviour
         //SALTO DEL PERSONAJE
         if(Input.GetKey("space") && (CheckGround.isGrounded || WallCheck.isWalled))
         {
-            if(CheckGround.isGrounded && !WallCheck.isWalled)
+            if(!WallCheck.isWalled )
             {
                 rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
-            } else 
-            if(!CheckGround.isGrounded && WallCheck.isWalled)
-            {
+            } 
+            else {
                 rb2D.velocity = new Vector2(rb2D.velocity.x, wallJumpSpeed);
             }
         }

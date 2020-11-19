@@ -14,7 +14,6 @@ public class FireCollected : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
             Invoke("DisableAnimation", 1);
-            //Destroy(gameObject, 1f);
         }
     }
 

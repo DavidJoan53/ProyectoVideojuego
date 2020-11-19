@@ -1,21 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Audio; 
 
 public class RedKnightIA : MonoBehaviour
 {
+    public Text youDie;
+
+    public AudioSource clip;
 
     public Animator animator;
 
-    public SpriteRenderer SpriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
-    public float speed = 3;
+    public float speed = 4.5f;
 
     private float waitTime;
 
     public Transform[] moveSpots;
 
-    public float startWaitTime = 2;
+    public float startWaitTime = 1.5f;
 
     private int i = 0;
 
@@ -28,8 +33,11 @@ public class RedKnightIA : MonoBehaviour
 
     void Update()
     {
+        StartCoroutine(CheckEnemyMoving());
+
         transform.position=Vector2.MoveTowards(transform.position, moveSpots[i].transform.position, speed * Time.deltaTime);
-        if(Vector2.Distance(transform.position, moveSpots[i].transform.position)<0.1f)
+        
+        if(Vector2.Distance(transform.position, moveSpots[i].transform.position)<0.2f)
         {
             if(waitTime<=0)
             {
@@ -44,7 +52,23 @@ public class RedKnightIA : MonoBehaviour
                 waitTime = startWaitTime;
             } 
             else {
-                waitTime = Time.deltaTime;
+                waitTime -= Time.deltaTime;
+            }
+        }
+
+        IEnumerator CheckEnemyMoving()
+        {
+            actualPos=transform.position;
+
+            yield return new WaitForSeconds(0.5f);
+
+            if(transform.position.x > actualPos.x)
+            {
+                spriteRenderer.flipX = false;
+            } else
+            if(transform.position.x < actualPos.x)
+            {
+                spriteRenderer.flipX = true;
             }
         }
     
@@ -54,7 +78,9 @@ public class RedKnightIA : MonoBehaviour
     {
         if(collision.transform.CompareTag("Player"))
         {
-            Debug.Log("Player Damaged");
+            clip.Play();
+            youDie.gameObject.SetActive(true);
+            collision.gameObject.SetActive(false);
         }
     }
 }

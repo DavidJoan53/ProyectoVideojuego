@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Audio; 
 
 public class SpikesScript : MonoBehaviour
 {
+    public Text youDie;
+
     public AudioSource clip;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -12,9 +15,8 @@ public class SpikesScript : MonoBehaviour
         if(collision.transform.CompareTag("Player"))
         {
             clip.Play();
-            Debug.Log("Player Destroyed");
-            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            //Destroy(collision.gameObject);
+            youDie.gameObject.SetActive(true);
+            collision.gameObject.SetActive(false);
         }
     }
 }
