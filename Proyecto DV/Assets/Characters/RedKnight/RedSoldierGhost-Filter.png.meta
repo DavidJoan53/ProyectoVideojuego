@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 3461c5b289c04ab4ca480715a7de8467
+guid: eb2d2e4d450b07f4daee4d603ebe1e11
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7873007990865785207
-    second: NamelessPrisonerJump_0
-  - first:
-      213: 7629753763799326169
-    second: NamelessPrisonerJump_1
-  - first:
-      213: 2141633673511223069
-    second: NamelessPrisonerJump_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 4.2
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 20, y: 0, z: 17, w: 5}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -106,70 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: NamelessPrisonerJump_0
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 2
-        width: 26
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98e02aef1f47db290800000000000000
-      internalID: -7873007990865785207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NamelessPrisonerJump_1
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 3
-        width: 32
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9dd55febf9452e960800000000000000
-      internalID: 7629753763799326169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NamelessPrisonerJump_2
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 6
-        width: 40
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1fb6acaa7c98bd10800000000000000
-      internalID: 2141633673511223069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

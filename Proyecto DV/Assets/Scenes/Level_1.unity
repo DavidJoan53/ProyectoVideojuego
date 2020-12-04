@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 88341185}
   - component: {fileID: 88341184}
   m_Layer: 0
-  m_Name: RedKnight_1
+  m_Name: RedKnight_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1051,9 +1051,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16653633, y: -0.09588504}
+  m_Offset: {x: 0.029001236, y: -0.09588504}
   m_SpriteTilingProperty:
-    border: {x: 0.52500004, y: 0, z: 0.075, w: 0.125}
+    border: {x: 0.5, y: 0, z: 0.425, w: 0.125}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 0.64, y: 0.64}
@@ -1062,7 +1062,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8228283, y: 1.4082298}
+  m_Size: {x: 0.68361664, y: 1.4082298}
   m_EdgeRadius: 0
 --- !u!95 &88341187
 Animator:
@@ -1122,7 +1122,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b619f5db7e96fbd47a203706fb94d926, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb2d2e4d450b07f4daee4d603ebe1e11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1298,9 +1298,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16653633, y: -0.09588504}
+  m_Offset: {x: 0.041374207, y: -0.09588504}
   m_SpriteTilingProperty:
-    border: {x: 0.52500004, y: 0, z: 0.075, w: 0.125}
+    border: {x: 0.5, y: 0, z: 0.425, w: 0.125}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 0.64, y: 0.64}
@@ -1309,7 +1309,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8228283, y: 1.4082298}
+  m_Size: {x: 0.695343, y: 1.4082298}
   m_EdgeRadius: 0
 --- !u!95 &112241160
 Animator:
@@ -1369,7 +1369,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b619f5db7e96fbd47a203706fb94d926, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb2d2e4d450b07f4daee4d603ebe1e11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1698,7 +1698,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1264930388752222, guid: 79469b6cbd716b34f95b3660701e6221, type: 3}
       propertyPath: m_Name
-      value: RapelTrans_1 (2)
+      value: RapelTrans_7
       objectReference: {fileID: 0}
     - target: {fileID: 1264930388752222, guid: 79469b6cbd716b34f95b3660701e6221, type: 3}
       propertyPath: m_TagString
@@ -2126,9 +2126,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16653633, y: -0.09588504}
+  m_Offset: {x: 0.024998665, y: -0.09588504}
   m_SpriteTilingProperty:
-    border: {x: 0.52500004, y: 0, z: 0.075, w: 0.125}
+    border: {x: 0.5, y: 0, z: 0.425, w: 0.125}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 1.6}
     newSize: {x: 0.64, y: 0.64}
@@ -2137,7 +2137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8228283, y: 1.4082298}
+  m_Size: {x: 0.68958664, y: 1.4082298}
   m_EdgeRadius: 0
 --- !u!212 &212575173
 SpriteRenderer:
@@ -2178,7 +2178,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b619f5db7e96fbd47a203706fb94d926, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb2d2e4d450b07f4daee4d603ebe1e11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9867,7 +9867,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1127319885}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &441847647
 MonoBehaviour:
@@ -10250,7 +10250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 847832214}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &508829380
 AudioSource:
@@ -10538,7 +10538,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 847832214}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &544277651
 AudioSource:
@@ -10758,7 +10758,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 847832214}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &544349844
 AudioSource:
@@ -17145,11 +17145,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761950271}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -12.97, z: 2.8105469}
+  m_LocalPosition: {x: -10.34, y: -12.82, z: 2.8105469}
   m_LocalScale: {x: 0.52986103, y: 0.48398465, z: 0.31209704}
   m_Children:
   - {fileID: 617542098}
-  m_Father: {fileID: 1127319885}
+  m_Father: {fileID: 937303515}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &761950273
@@ -17632,10 +17632,10 @@ Transform:
   m_LocalPosition: {x: 2.9078197, y: -1.9241724, z: 0.42275375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1903788799}
-  - {fileID: 544277650}
-  - {fileID: 544349843}
   - {fileID: 508829379}
+  - {fileID: 544349843}
+  - {fileID: 544277650}
+  - {fileID: 1903788799}
   - {fileID: 1645462154}
   - {fileID: 128819641}
   - {fileID: 1368033182}
@@ -17911,7 +17911,7 @@ Transform:
   m_LocalScale: {x: 0.52986103, y: 0.48398465, z: 0.31209704}
   m_Children:
   - {fileID: 1466406977}
-  m_Father: {fileID: 1127319885}
+  m_Father: {fileID: 937303515}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &853586133
@@ -18211,6 +18211,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 969528608}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &937303514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937303515}
+  m_Layer: 0
+  m_Name: CheckPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &937303515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937303514}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 853586132}
+  - {fileID: 761950272}
+  m_Father: {fileID: 1127319885}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &969528608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19150,9 +19182,8 @@ Transform:
   m_LocalPosition: {x: 9.895588, y: -3.364428, z: -2.8105469}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 853586132}
-  - {fileID: 761950272}
   - {fileID: 441847646}
+  - {fileID: 937303515}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21076,7 +21107,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1264930388752222, guid: 79469b6cbd716b34f95b3660701e6221, type: 3}
       propertyPath: m_Name
-      value: RapelTrans_2 (1)
+      value: RapelTrans_6
       objectReference: {fileID: 0}
     - target: {fileID: 1264930388752222, guid: 79469b6cbd716b34f95b3660701e6221, type: 3}
       propertyPath: m_TagString
@@ -22192,7 +22223,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 847832214}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1903788800
 AudioSource:
@@ -22457,7 +22488,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1264930388752222, guid: 79469b6cbd716b34f95b3660701e6221, type: 3}
       propertyPath: m_Name
-      value: RapelTrans_1 (1)
+      value: RapelTrans_5
       objectReference: {fileID: 0}
     - target: {fileID: 1264930388752222, guid: 79469b6cbd716b34f95b3660701e6221, type: 3}
       propertyPath: m_TagString

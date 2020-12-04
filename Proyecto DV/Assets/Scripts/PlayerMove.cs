@@ -28,13 +28,13 @@ public class PlayerMove : MonoBehaviour
     void FixedUpdate()
     {
         //MOVIMIENTO HORIZONTAL DEL PERSONAJE
-        if(Input.GetKey("d"))
+        if(Input.GetKey("d") && !Input.GetKey("e"))
         {
             rb2D.velocity = new Vector2(runSpeed,rb2D.velocity.y);
             spriteRenderer.flipX=false;
             animator.SetBool("Run", true);
         } else
-        if(Input.GetKey("a"))
+        if(Input.GetKey("a") && !Input.GetKey("e"))
         {
             rb2D.velocity = new Vector2(-runSpeed,rb2D.velocity.y);
             spriteRenderer.flipX=true;
@@ -58,7 +58,7 @@ public class PlayerMove : MonoBehaviour
         }
 
         //SALTO DEL PERSONAJE
-        if(Input.GetKey("space") && (CheckGround.isGrounded || WallCheck.isWalled))
+        if(Input.GetKey("space") && !Input.GetKey("e") && (CheckGround.isGrounded || WallCheck.isWalled))
         {
             if(!WallCheck.isWalled )
             {
@@ -92,10 +92,10 @@ public class PlayerMove : MonoBehaviour
         //ATACAR
         if(Input.GetKey("e"))
         {
-            animator.SetBool("Attack", true);
+            animator.SetBool("Fire", true);
         }
         else {
-            animator.SetBool("Attack", false);
+            animator.SetBool("Fire", false);
         }
     }
 }
