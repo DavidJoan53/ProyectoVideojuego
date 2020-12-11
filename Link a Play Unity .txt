@@ -1,0 +1,1 @@
+Link a la página de Play Unity con el juego: https://play.unity.com/mg/other/webgl-builds-2257
