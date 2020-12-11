@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float runSpeed=4;
+    public static float runSpeed=4;
     public float jumpSpeed=5;
     public float wallSlidingSpeed=1;
     public float wallJumpSpeed=3;
+    public static float state=1;
     Rigidbody2D rb2D;
 
     public bool betterJump = false;

@@ -78,9 +78,19 @@ public class RedKnightIA : MonoBehaviour
     {
         if(collision.transform.CompareTag("Player"))
         {
+            //EJECUTO LA MUERTE
             clip.Play();
             youDie.gameObject.SetActive(true);
-            collision.gameObject.SetActive(false);
+            //INICIO EL RESPAWN
+            Invoke("HideMessage", 1.5f);
+            //collision.gameObject.GetComponent<PlayerMove>().setState(0);
+            collision.gameObject.transform.position = collision.gameObject.transform.parent.transform.GetChild(0).gameObject.transform.position;
+            
         }
+    }
+
+    void HideMessage()
+    {
+        youDie.gameObject.SetActive(false);
     }
 }

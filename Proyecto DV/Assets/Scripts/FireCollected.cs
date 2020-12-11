@@ -9,7 +9,8 @@ public class FireCollected : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             //ESTABLECIMIENTO DEL CHECKPOINT
-            collision.GetComponent<PlayerRespawn>().ReachedCheckPoint(transform.position.x, transform.position.y);
+            //collision.GetComponent<PlayerRespawn>().ReachedCheckPoint(transform.position.x, transform.position.y);
+            collision.gameObject.transform.parent.transform.GetChild(0).gameObject.transform.position = transform.position;
             //ANIMACIÓN DEL SPRITE
             GetComponent<SpriteRenderer>().enabled = false;
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
